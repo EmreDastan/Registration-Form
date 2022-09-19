@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration</title>
+  </head>
+  <body>
+    <form action="register.php">
+      <h1 style="font-size: 36px; font-weight: bold">Registration Form</h1>
+      <h2 style="font-weight: bold">Account Information</h2>
+      <article>
+        <table style="font-weight: bold">
+          <tr>
+            <td>
+              <label for="username">Username:</label>
+            </td>
+            <td>
+              <input
+                type="text"
+                name="username"
+                id="username"
+                placeholder="Enter your username"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="email">Email:</label>
+            </td>
+            <td>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Enter your email"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="pswd">Password:</label>
+            </td>
+            <td>
+              <input
+                type="password"
+                name="pswd"
+                id="pswd"
+                placeholder="Enter your password"
+              />
+            </td>
+          </tr>
+        </table>
+      </article>
+      <h2>Personal Information</h2>
+      <article>
+        <table style="font-weight: bold">
+          <tr>
+            <td>
+              <label for="name">Name:</label>
+            </td>
+            <td>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Enter your name"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="surname">Surname:</label>
+            </td>
+            <td>
+              <input
+                type="text"
+                name="surname"
+                id="surname"
+                placeholder="Enter your surname"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="city">City:</label>
+            </td>
+            <td>
+              <select name="city" id="city">
+                <option value="34">Istanbul</option>
+                <option value="58">Sivas</option>
+              </select>
+            </td>
+          </tr>
+        </table>
+      </article>
+      <article>
+        <table>
+          <tr>
+            <td style="font-weight: bold">
+              <label for="gender">Gender:</label>
+            </td>
+            <td>
+              <input type="radio" name="gender" id="male" /> Male
+              <input type="radio" name="gender" id="female" /> Female
+            </td>
+          </tr>
+          <tr>
+            <td style="font-weight: bold">
+              <label for="hobbies">Hobbies</label>
+            </td>
+            <td>
+              <input type="checkbox" name="cinema" id="cinema" /> Watching
+              Cinema
+            </td>
+            <td>
+              <input type="checkbox" name="videogames" id="videogames" /> Video
+              Games
+            </td>
+            <td>
+              <input type="checkbox" name="football" id="football" /> Football
+            </td>
+            <td>
+              <input type="checkbox" name="reading" id="reading" /> Reading
+            </td>
+            <td><input type="checkbox" name="travel" id="travel" /> Travel</td>
+          </tr>
+        </table>
+      </article>
+      <div>
+        <button type="submit">Kaydet</button>
+        <button type="reset">Clear</button>
+      </div>
+    </form>
+  </body>
+</html>
